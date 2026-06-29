@@ -152,7 +152,7 @@ export default function Booking() {
                       <label className={styles.label}>Location / Venue</label>
                       <input 
                         type="text" 
-                        placeholder="e.g. Civic Centre, Victoria Island"
+                        placeholder="e.g. Kempinski Hotel, Accra"
                         className={styles.input}
                         value={formData.location}
                         onChange={e => setFormData({...formData, location: e.target.value})}
