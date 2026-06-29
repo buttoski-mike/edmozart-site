@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <div className={styles.logo}>Edmozart Keys</div>
+        <div className={styles.logo}>Edmozart</div>
         <div className={styles.links}>
           <button onClick={() => scrollTo("about")} className={styles.link}>About</button>
           <button onClick={() => scrollTo("services")} className={styles.link}>Services</button>

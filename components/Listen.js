@@ -15,7 +15,7 @@ export default function Listen() {
     <section className={styles.listenSection} id="listen">
       <div className="container">
         <div className="section-subtitle">Listen & Watch</div>
-        <h2 className={`section-title ${styles.title}`}>See what an Edmozart Keys event feels like.</h2>
+        <h2 className={`section-title ${styles.title}`}>See what an Edmozart event feels like.</h2>
         
         <div className={styles.grid}>
           {videos.map((video, index) => (

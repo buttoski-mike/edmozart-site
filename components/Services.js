@@ -19,7 +19,7 @@ export default function Services() {
     {
       title: "Full Band Experience",
       icon: <Guitar size={32} strokeWidth={1.5} />,
-      description: "Edmozart Keys leads a 4-piece group through your favourite genres — afrobeats, jazz, RnB, and more.",
+      description: "Edmozart leads a 4-piece group through your favourite genres — afrobeats, jazz, RnB, and more.",
       price: "FROM GH₵ 3,000 · 3 HRS"
     }
   ];
@@ -30,7 +30,7 @@ export default function Services() {
         <div className="section-subtitle">What's on offer</div>
         <h2 className={`section-title ${styles.title}`}>
           Pick your vibe, <br />
-          Edmozart Keys handles the rest.
+          Edmozart handles the rest.
         </h2>
         <p className={styles.subtitle}>
           Every package can be tailored — just tell him what you need during the booking flow.

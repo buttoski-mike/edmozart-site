@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.logo}>Edmozart Keys</div>
+        <div className={styles.logo}>Edmozart</div>
         <div className={styles.links}>
           <button onClick={() => scrollTo("about")} className={styles.link}>About</button>
           <button onClick={() => scrollTo("services")} className={styles.link}>Services</button>
@@ -21,7 +21,7 @@ export default function Footer() {
           <button onClick={() => scrollTo("book")} className={styles.link}>Book</button>
         </div>
         <div className={styles.copyright}>
-          &copy; {new Date().getFullYear()} Edmozart Keys. All rights reserved.
+          &copy; {new Date().getFullYear()} Edmozart. All rights reserved.
         </div>
       </div>
     </footer>

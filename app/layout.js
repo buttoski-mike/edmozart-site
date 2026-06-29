@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Edmozart Keys | Musician & Instrumentalist",
+  title: "Edmozart | Musician & Instrumentalist",
   description: "Professional instrumentalist available for birthdays, weddings, corporate events, and private celebrations.",
 };
 

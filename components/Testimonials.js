@@ -4,7 +4,7 @@ import { Star } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "\"Edmozart Keys turned my daughter's birthday into something I'll never forget. Everyone kept asking who the saxophonist was.\"",
+      quote: "\"Edmozart turned my daughter's birthday into something I'll never forget. Everyone kept asking who the saxophonist was.\"",
       author: "AKOSUA A. — BIRTHDAY, KUMASI"
     },
     {

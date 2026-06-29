@@ -55,7 +55,7 @@ export default function Booking() {
           <div className="section-subtitle">Reserve your date</div>
           <h2 className={`section-title ${styles.title}`}>Let's make your event unforgettable.</h2>
           <p className={styles.subtitle}>
-            Fill out the form and Edmozart Keys will confirm within 24 hours. A 30% deposit secures the date.
+            Fill out the form and Edmozart will confirm within 24 hours. A 30% deposit secures the date.
           </p>
 
           <div className={styles.timeline}>
@@ -65,7 +65,7 @@ export default function Booking() {
             </div>
             <div className={styles.timelineItem}>
               <div className={styles.timelineNumber}>2</div>
-              <div className={styles.timelineText}>Edmozart Keys reviews and confirms availability</div>
+              <div className={styles.timelineText}>Edmozart reviews and confirms availability</div>
             </div>
             <div className={styles.timelineItem}>
               <div className={styles.timelineNumber}>3</div>
@@ -84,12 +84,12 @@ export default function Booking() {
               <h3 className={styles.successTitle}>Request Sent!</h3>
               <p className={styles.timelineText}>
                 Thanks {formData.name}. We've received your booking inquiry for {formData.date || "your event"}. 
-                Edmozart Keys will review the details and reach out to you at {formData.phone} or {formData.email} shortly!
+                Edmozart will review the details and reach out to you at {formData.phone} or {formData.email} shortly!
               </p>
             </div>
           ) : (
             <>
-              <h3 className={styles.formHeader}>Book Edmozart Keys</h3>
+              <h3 className={styles.formHeader}>Book Edmozart</h3>
               
               <div className={styles.progressBar}>
                 <div className={`${styles.progressSegment} ${step >= 1 ? styles.active : ''}`}></div>
@@ -125,7 +125,7 @@ export default function Booking() {
                         <option>Solo Performance (Sax or Keyboard)</option>
                         <option>Live Keys + Sax Duo</option>
                         <option>Full Band Experience</option>
-                        <option>Not sure — let Edmozart Keys suggest</option>
+                        <option>Not sure — let Edmozart suggest</option>
                       </select>
                     </div>
                   </motion.div>
