@@ -80,13 +80,14 @@
     text-align: center;
   }
   .imageContainer {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    max-width: none;
+    border-radius: 0;
   }
   .content {
     padding-right: 0;
-    transform: translateX(-15px);
   }
   .stats {
     justify-content: center;
