@@ -89,6 +89,7 @@
     margin-right: 0;
     max-width: none;
     border-radius: 0;
+    background-color: transparent;
   }
   .content {
     padding-right: var(--spacing-container);
