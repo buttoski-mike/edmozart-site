@@ -86,6 +86,7 @@
   }
   .content {
     padding-right: 0;
+    transform: translateX(-15px);
   }
   .stats {
     justify-content: center;
