@@ -9,6 +9,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-container);
 }
 
 .imageContainer {
@@ -78,16 +81,18 @@
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: center;
+    padding: 0;
   }
   .imageContainer {
-    width: calc(100% + var(--spacing-container) * 2);
-    margin-left: calc(var(--spacing-container) * -1);
-    margin-right: calc(var(--spacing-container) * -1);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     max-width: none;
     border-radius: 0;
   }
   .content {
-    padding-right: 0;
+    padding-right: var(--spacing-container);
+    padding-left: var(--spacing-container);
   }
   .stats {
     justify-content: center;
