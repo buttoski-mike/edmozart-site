@@ -1,18 +1,17 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
   try {
     const data = await request.json();
     
-    // Here we would integrate with Resend, SendGrid, etc.
-    // For now, we will just log the mock booking.
     console.log("Booking Received:", data);
     
-    // Example of what the email logic might look like:
-    /*
-    await resend.emails.send({
+    const { data: emailData, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'kael@example.com',
+      to: process.env.CONTACT_EMAIL,
       subject: `New Booking Inquiry from ${data.name}`,
       html: `<p><strong>Name:</strong> ${data.name}</p>
              <p><strong>Email:</strong> ${data.email}</p>
@@ -23,7 +22,11 @@ export async function POST(request) {
              <p><strong>Location:</strong> ${data.location}</p>
              <p><strong>Details:</strong> ${data.details}</p>`
     });
-    */
+
+    if (error) {
+      console.error("Resend Error:", error);
+      return NextResponse.json({ success: false, message: "Failed to send email" }, { status: 500 });
+    }
 
     return NextResponse.json({ success: true, message: "Booking inquiry sent!" });
   } catch (error) {
