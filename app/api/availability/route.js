@@ -3,9 +3,8 @@ import ICAL from "ical.js";
 
 export async function GET() {
   try {
-    // We are using a sample public US Holidays calendar for testing.
-    // Replace this with the actual Apple/Google Calendar .ics link.
-    const calendarUrl = "https://calendar.google.com/calendar/ical/en.usa%23holiday%40group.v.calendar.google.com/public/basic.ics";
+    // We use the calendar URL from the environment variables.
+    const calendarUrl = process.env.CALENDAR_URL;
     
     // Fetch the calendar
     const response = await fetch(calendarUrl);
