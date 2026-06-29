@@ -9,9 +9,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-container);
 }
 
 .imageContainer {
@@ -33,7 +30,7 @@
 }
 
 .title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 2rem;
   color: var(--color-dark);
 }
@@ -81,19 +78,9 @@
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: center;
-    padding: 0;
-  }
-  .imageContainer {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    max-width: none;
-    border-radius: 0;
-    background-color: transparent;
   }
   .content {
-    padding-right: var(--spacing-container);
-    padding-left: var(--spacing-container);
+    padding-right: 0;
   }
   .stats {
     justify-content: center;

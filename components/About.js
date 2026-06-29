@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <section className={styles.aboutSection} id="about">
-      <div className={styles.grid}>
+      <div className={`container ${styles.grid}`}>
         <motion.div 
           className={styles.imageContainer}
           initial={{ opacity: 0, y: 20 }}
