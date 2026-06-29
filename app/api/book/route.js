@@ -20,7 +20,9 @@ export async function POST(request) {
              <p><strong>Service:</strong> ${data.service}</p>
              <p><strong>Date:</strong> ${data.date} at ${data.time}</p>
              <p><strong>Location:</strong> ${data.location}</p>
-             <p><strong>Details:</strong> ${data.details}</p>`
+             <p><strong>Specific Song:</strong> ${data.specificSong || 'None'}</p>
+             <p><strong>Dress Code:</strong> ${data.dressCode || 'None'}</p>
+             <p><strong>Other Requests:</strong> ${data.otherRequests || 'None'}</p>`
     });
 
     if (error) {

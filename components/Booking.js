@@ -15,7 +15,9 @@ export default function Booking() {
     name: "",
     email: "",
     phone: "",
-    details: ""
+    specificSong: "",
+    dressCode: "",
+    otherRequests: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -157,12 +159,32 @@ export default function Booking() {
                       />
                     </div>
                     <div className={styles.formGroup}>
-                      <label className={styles.label}>Special Requests (Optional)</label>
+                      <label className={styles.label}>Specific Song Requests (Optional)</label>
+                      <input 
+                        type="text"
+                        className={styles.input}
+                        placeholder="e.g. Perfect by Ed Sheeran"
+                        value={formData.specificSong}
+                        onChange={e => setFormData({...formData, specificSong: e.target.value})}
+                      />
+                    </div>
+                    <div className={styles.formGroup}>
+                      <label className={styles.label}>Dress Code (Optional)</label>
+                      <input 
+                        type="text"
+                        className={styles.input}
+                        placeholder="e.g. Black Tie, Smart Casual"
+                        value={formData.dressCode}
+                        onChange={e => setFormData({...formData, dressCode: e.target.value})}
+                      />
+                    </div>
+                    <div className={styles.formGroup}>
+                      <label className={styles.label}>Any Other Requests (Optional)</label>
                       <textarea 
                         className={styles.textarea}
-                        placeholder="Specific songs, dress code, etc."
-                        value={formData.details}
-                        onChange={e => setFormData({...formData, details: e.target.value})}
+                        placeholder="Additional details..."
+                        value={formData.otherRequests}
+                        onChange={e => setFormData({...formData, otherRequests: e.target.value})}
                       ></textarea>
                     </div>
                   </motion.div>
