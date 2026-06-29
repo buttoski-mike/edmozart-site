@@ -1,0 +1,137 @@
+.availabilitySection {
+  padding: var(--spacing-section) 0;
+  background-color: var(--color-light);
+  color: var(--color-text-light);
+}
+
+.title {
+  color: var(--color-dark);
+  margin-bottom: 4rem;
+}
+
+.calendarWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Custom styles for react-calendar to match mockup */
+:global(.react-calendar) {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+}
+
+:global(.react-calendar__navigation) {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+:global(.react-calendar__navigation__label) {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  background: none;
+  border: none;
+  flex-grow: 1;
+  text-align: left;
+  padding: 0 1.5rem;
+}
+
+:global(.react-calendar__navigation__arrow) {
+  background: transparent;
+  border: 1px solid var(--color-border-light);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-dark);
+  transition: all 0.2s ease;
+}
+
+:global(.react-calendar__navigation__arrow:hover) {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+:global(.react-calendar__month-view__weekdays) {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+  margin-bottom: 2rem;
+}
+
+:global(.react-calendar__month-view__weekdays__weekday) {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+:global(.react-calendar__month-view__weekdays__weekday abbr) {
+  text-decoration: none;
+}
+
+:global(.react-calendar__tile) {
+  background: transparent;
+  border: none;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-dark);
+  position: relative;
+}
+
+:global(.react-calendar__tile:disabled) {
+  color: var(--color-text-muted);
+}
+
+:global(.react-calendar__tile--now) {
+  font-weight: bold;
+}
+
+:global(.react-calendar__tile--active) {
+  background: var(--color-gold);
+  color: var(--color-dark);
+}
+
+.dot {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.dotAvailable {
+  background-color: #2E8B57; /* Green */
+}
+
+.dotBooked {
+  background-color: #CD5C5C; /* Red */
+}
+
+.legend {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legendDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}

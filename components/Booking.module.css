@@ -1,0 +1,244 @@
+.bookingSection {
+  padding: var(--spacing-section) 0;
+  background-color: var(--color-light);
+  color: var(--color-text-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.left {
+  padding-right: 2rem;
+}
+
+.title {
+  color: var(--color-dark);
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: 4rem;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.timelineItem:last-child {
+  border-bottom: none;
+}
+
+.timelineNumber {
+  color: var(--color-gold);
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  width: 20px;
+}
+
+.timelineText {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.right {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border-light);
+  padding: 3rem;
+}
+
+.formHeader {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  margin-bottom: 2rem;
+}
+
+.progressBar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.progressSegment {
+  height: 4px;
+  flex-grow: 1;
+  background-color: var(--color-border-light);
+}
+
+.progressSegment.active {
+  background-color: var(--color-gold);
+}
+
+.formGroup {
+  margin-bottom: 2rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.eventOption {
+  border: 1px solid var(--color-border-light);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.eventOption:hover {
+  border-color: var(--color-gold);
+}
+
+.eventOption.selected {
+  border-color: var(--color-gold);
+  background-color: rgba(207, 167, 82, 0.1);
+}
+
+.select {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--color-border-light);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  cursor: pointer;
+  appearance: none;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--color-gold);
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--color-border-light);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-gold);
+}
+
+.textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--color-border-light);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+}
+
+.formFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.stepIndicator {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.nextBtn {
+  background-color: var(--color-gold);
+  color: var(--color-dark);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.nextBtn:hover {
+  background-color: var(--color-gold-hover);
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0;
+}
+
+.backBtn:hover {
+  color: var(--color-dark);
+}
+
+.successMessage {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.successTitle {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    padding-right: 0;
+  }
+  .formFooter {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+  .right {
+    padding: 2rem 1.5rem;
+  }
+}

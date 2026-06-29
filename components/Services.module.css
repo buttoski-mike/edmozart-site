@@ -1,0 +1,95 @@
+.servicesSection {
+  padding: var(--spacing-section) 0;
+  background-color: var(--color-dark);
+  color: var(--color-text-dark);
+}
+
+.title {
+  margin-bottom: 4rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin-bottom: 4rem;
+  line-height: 1.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0; /* Cards touch each other as per mockup */
+  border-top: 1px solid var(--color-border-dark);
+  border-bottom: 1px solid var(--color-border-dark);
+  border-left: 1px solid var(--color-border-dark);
+}
+
+.card {
+  padding: 3rem 2.5rem;
+  border-right: 1px solid var(--color-border-dark);
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: var(--color-dark-muted);
+}
+
+.cardActive {
+  background-color: var(--color-dark-muted);
+}
+
+.icon {
+  color: var(--color-gold);
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-family: var(--font-serif);
+  margin-bottom: 1.5rem;
+  color: var(--color-text-dark);
+}
+
+.cardText {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  min-height: 100px;
+}
+
+.cardPrice {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  background-color: var(--color-gold);
+  color: var(--color-dark);
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    border-left: none;
+  }
+  .card {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border-dark);
+  }
+  .card:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,56 @@
+.listenSection {
+  padding: var(--spacing-section) 0;
+  background-color: var(--color-light);
+  color: var(--color-text-light);
+}
+
+.title {
+  color: var(--color-dark);
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.videoCard {
+  background-color: var(--color-dark);
+  border-radius: 4px;
+  aspect-ratio: 16/10;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.videoCard:hover {
+  transform: translateY(-5px);
+}
+
+.playButton {
+  color: var(--color-gold);
+  transition: transform 0.3s ease;
+}
+
+.videoCard:hover .playButton {
+  transform: scale(1.1);
+}
+
+.caption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

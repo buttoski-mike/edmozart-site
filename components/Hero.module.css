@@ -1,0 +1,81 @@
+.hero {
+  min-height: 100vh;
+  padding-top: 80px; /* navbar height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  max-width: 800px;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 5.5rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.title span {
+  color: var(--color-gold);
+  font-style: italic;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transform: rotate(90deg);
+  transform-origin: right center;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.scrollLine {
+  width: 50px;
+  height: 1px;
+  background-color: var(--color-gold);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .scrollIndicator {
+    display: none;
+  }
+}
