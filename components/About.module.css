@@ -77,12 +77,17 @@
   .grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+    text-align: center;
   }
   .imageContainer {
     width: 100%;
+    max-width: 500px;
     margin: 0 auto;
   }
   .content {
     padding-right: 0;
+  }
+  .stats {
+    justify-content: center;
   }
 }
